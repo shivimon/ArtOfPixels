@@ -1,0 +1,528 @@
+/*Link to import different font from google fonts */
+
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap');
+
+/* Style for body */
+
+* {
+  box-sizing: border-box;
+}
+html, body
+{
+    margin: 0px;
+    background-image: url("4.png");
+}
+
+.bg-img {
+  /* The image used */
+
+  background-image: url("bg2.jpg");
+
+  min-height: 800px;
+
+  /* Center and scale the image nicely */
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+
+  position: relative;
+}
+ 
+ /* Style used for navigation bar */
+ 
+div.container
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	  text-align: center;
+}
+
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.lime
+{
+    background: #07df23;
+}
+
+/* Pull up  */
+div.pullUp a:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullUp a:hover:before
+{
+    height: 100%;
+}
+
+
+
+ /* Positioning of the title and glow feature */
+
+ .bg-img .container .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+  font-weight:800;
+  color: #15d315f5;
+  font-size: 80px;
+  color: #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+  }
+}
+
+  /* Formatting of headings */
+
+  .data
+  {
+    padding-top: 20px;
+    font-size: 35px;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #545454
+  }
+  
+
+ /* Formatting of text */
+
+.section-description
+{
+  line-height: 26px;
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 550;
+  font-size: 18px;
+  color: #8c9597;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+ /* Formatting of Images under Nature section */
+
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* Clearfix (clear floats) */
+
+.row1::after {
+  background-image: url("bg.png");
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ /* Slide Show */
+ .box
+ {
+   height: 500px;
+   width: 100%;
+   background-image: url("prism.png");
+ }
+ 
+ .slideshow-container {
+   width: 100%;
+   position: relative;
+   margin: 0 auto;
+ }
+ 
+ .mySlides {
+     display: none;
+ }
+ 
+ /* Images */
+ 
+ .images {
+   height: 500px;
+   background-position: center;
+   background-size: cover;
+ }
+ 
+ #image1 {
+   background-image: url('t1.webp');
+ }
+ 
+ #image2 {
+   background-image: url('t2.webp');
+ }
+ 
+ #image3 {
+   background-image: url('t3.webp');
+ }
+ 
+ #image4 {
+   background-image: url('t4.webp');
+ }
+ 
+ #image5 {
+   background-image: url('t5.webp');
+ }
+ 
+ #image6 {
+   background-image: url('t6.webp');
+ }
+ .location-title {
+   padding-top: 200px;
+   width: 60%;
+   margin: 0 auto;
+   padding: auto;
+   color: #f7f7f7;
+ }
+ 
+ .location-title h2 {
+   text-align: center;
+   font-size: 3.8em;
+   font-family: 'Poiret One', cursive;
+   padding: 0px;
+   margin: 0px;
+   text-shadow: 3px 3px 5px #4b4b4b;
+ }
+ 
+ .location-title h4 {
+   text-align: center;
+   font-size: 2em;
+   font-family: 'Alex Brush', cursive;
+   padding: 0px;
+   margin: 0px;
+   text-shadow: 2px 2px 5px #4b4b4b;
+ }
+ 
+ /* Next & previous buttons */
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+ }
+ 
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+ }
+ 
+ /* The dots/bullets/indicators */
+ .dot,
+ .hamdot,
+ .parisdot,
+ .amdot,
+ .maltadot,
+ .vegasdot,
+ .nydot {
+   cursor:pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+ 
+ .active, .dot:hover, .hamdot:hover, .parisdot:hover, .amdot:hover, .maltadot:hover, .vegasdot:hover, .nydot:hover  {
+   background-color: #717171;
+ }
+ 
+ /* Fading animation */
+ .fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 1.5s;
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+ 
+ @-webkit-keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}
+ }
+ 
+ @keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}
+ }
+
+
+/* Create two equal columns that sits next to each other */
+
+.column {
+  flex: 50%;
+  padding: 0 4px;
+  padding-left: 60px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+i{
+  padding: 0;
+  color: rgba(76, 78, 80, 0.76);
+}
+
+.w3-button {
+  width:150px;
+}
+  
+
+ /* box containers  */
+
+.cta-100 {
+  margin-top: 100px;
+  padding-left: 8%;
+  padding-top: 7%;
+}
+.col-md-4{
+    padding-bottom:20px;
+}
+
+.white {
+  color: #fff !important;
+}
+.mt{float: left;margin-top: -20px;padding-top: 20px;}
+.bg-blue-ui {
+  background-color: #708198 !important;
+}
+figure img{width:300px;}
+
+#box1s {
+  padding-bottom: 100px;
+}
+
+.box1 .s-indicators {
+  left: 0;
+  top: -50px;
+  height: 50%;
+}
+
+/* The colour of the indicators */
+
+.box1 .s-indicators li {
+  background: #708198;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.box1 .s-indicators .active {
+  background: #0fc9af;
+}
+
+.item-s-box1-block {
+  outline: medium none;
+  padding: 15px;
+}
+
+.item-box-box1 {
+  border: 1px solid #dadada;
+  text-align: center;
+  z-index: 4;
+  padding: 20px;
+}
+
+.item-box-box1-image {
+  position: relative;
+}
+
+.item-box-box1-image figure img {
+  width: 100%;
+  height: auto;
+}
+
+.item-box-box1-date {
+  position: absolute;
+  z-index: 5;
+  padding: 4px 20px;
+  top: -20px;
+  right: 8px;
+  background-color: #41cb52;
+}
+
+.item-box-box1-date span {
+  color: #fff;
+  display: block;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.item-box-box1-date span.mon {
+  font-size: 18px;
+}
+
+.item-box-box1-date span.day {
+  font-size: 16px;
+}
+
+.item-box-box1-body {
+  padding: 10px;
+}
+
+.item-heading-box1 a h5 {
+  margin: 0;
+  line-height: 1;
+  text-decoration:none;
+  transition: color 0.3s;
+}
+
+.item-box-box1-heading a {
+    text-decoration: none;
+}
+
+.item-box-box1-data p {
+  font-size: 13px;
+}
+
+.item-box-box1-data p i {
+  font-size: 12px;
+}
+
+.item-box-box1-text {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.mt-10 {
+  float: left;
+  margin-top: -10px;
+  padding-top: 10px;
+}
+
+.btn.bg-blue-ui.white.read {
+  cursor: pointer;
+  padding: 4px 20px;
+  float: left;
+  margin-top: 10px;
+}
+
+.btn.bg-blue-ui.white.read:hover {
+  box-shadow: 0px 5px 15px inset #4d5f77;
+}
+.item-box-box1-body .item-box-box1-heading h5
+{
+  font-weight: bold;
+}
+
+ /*Formatting of contact us sections and its icon */
+ 
+#lab_social_icon_footer {
+  padding: 40px 0;
+  background-color: #dedede;
+}
+
+#lab_social_icon_footer a {
+  color: #333;
+}
+
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+/*
+    Multicoloured Hover Variations
+*/
+
+#lab_social_icon_footer #social-fb:hover {
+  color: #3B5998;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+  color: #4099FF;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+  color: #d34836;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #f39c12;
+}
+
+footer
+{
+  font-family: lato,sans-serif;
+  font-weight: 400;
+    margin: 0 auto;
+	padding: 5em 3em;
+	text-align: center;
+    background: #555;
+}
+
+footer span
+{
+  
+  color: #fff;
+}
