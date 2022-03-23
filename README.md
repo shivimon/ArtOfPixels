@@ -1,0 +1,2 @@
+# ArtOfPixels
+Static Website
